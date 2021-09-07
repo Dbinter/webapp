@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: deploy artifacts
+      copy: src=/webapp/target/mvn-hello-world.war dest=/opt/apache-tomcat-9.0.52/webapp
